@@ -1,3 +1,6 @@
+
+import Head from 'next/head';
+import Link from 'next/link';
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -18,6 +21,9 @@ export default function Home() {
         irure esse ad. Ullamco sint eiusmod nisi ipsum ad fugiat qui quis ut
         nulla dolor labore reprehenderit sint.
       </p>
+      <Link href="/blogs/">
+          <a className={styles.btn}>See Blogs Listing</a>
+        </Link>
     </div>
   );
 }
